@@ -32,10 +32,6 @@
     <DocumentationFile>bin\Release\Saraff.Twain.DS.BitmapSource.XML</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Saraff.Twain.DS, Version=1.0.1.542, Culture=neutral, PublicKeyToken=d59c866b4519678c, processorArchitecture=MSIL">
-      <HintPath>..\packages\Saraff.Twain.DS.1.0.1.542\lib\net40\Saraff.Twain.DS.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="Microsoft.CSharp" />
@@ -53,6 +49,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Saraff.Twain.DS\Saraff.Twain.DS.csproj">
+      <Project>{a800b54e-ddb8-45ad-9785-82e3ec020fc6}</Project>
+      <Name>Saraff.Twain.DS</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
